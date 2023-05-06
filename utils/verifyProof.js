@@ -17,6 +17,8 @@ function verifyProof(proof, leaf, root) {
     }
   }
 
+  console.log('data',bytesToHex(data));
+  console.log('root',root);
   return bytesToHex(data) === root;
 }
 
